@@ -1,0 +1,14 @@
+# System & IDE
+.DS_Store
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# Build / cache (if any later)
+node_modules
+__pycache__
+.venv
+dist
+build

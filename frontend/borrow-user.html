@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的借阅 - 图书管理系统</title>
+  <link rel="stylesheet" href="css/style.css?v=20260301">
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="site-header">
+      <div class="container">
+        <div class="site-logo">
+          <img src="images/logo.svg" alt="Logo">
+          <h1 class="site-title"><a href="index.html">图书管理系统</a></h1>
+        </div>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="login.html">登录</a></li>
+            <li><a href="register.html">注册</a></li>
+            <li><a href="about.html">关于</a></li>
+            <li>
+              <span class="nav-drop-trigger">服务</span>
+              <div class="nav-drop">
+                <a href="list.html">图书列表</a>
+                <a href="borrow.html">借阅说明</a>
+                <a href="contact.html">联系</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <h2 class="section-title">我的借阅</h2>
+
+      <section class="card" id="current">
+        <h3 class="card-title">账户概览（示例数据，视为已登录用户）</h3>
+        <div class="stats-grid">
+          <div class="stats-card">
+            <span class="stats-value">3</span>
+            <span class="stats-label">当前在借</span>
+          </div>
+          <div class="stats-card">
+            <span class="stats-value">0</span>
+            <span class="stats-label">逾期未还</span>
+          </div>
+          <div class="stats-card">
+            <span class="stats-value">2</span>
+            <span class="stats-label">本月已还</span>
+          </div>
+          <div class="stats-card">
+            <span class="stats-value">30 天</span>
+            <span class="stats-label">标准借期</span>
+          </div>
+        </div>
+        <p style="margin-top: var(--space-md); color: var(--color-text-muted);">提示：示例数据仅用于展示效果，实际借阅状态需登录后加载真实数据（当前项目为纯 HTML/CSS 示例）。</p>
+      </section>
+
+      <section class="card">
+        <h3 class="card-title">当前在借</h3>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>图书</th>
+                <th>借出日期</th>
+                <th>应还日期</th>
+                <th>状态</th>
+                <th>续借次数</th>
+                <th>操作（示例）</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>活着</td>
+                <td>2025-01-15</td>
+                <td>2025-02-14</td>
+                <td><span class="badge badge-ok">在借</span></td>
+                <td>0</td>
+                <td class="action-cell">
+                  <input type="checkbox" id="action-row-1" class="action-toggle">
+                  <label for="action-row-1" class="btn btn-secondary">续借（示例）</label>
+                  <label for="action-row-1" class="btn btn-primary">归还（示例）</label>
+                  <span class="action-tip">仅为示例操作，真实系统中会提交续借/归还请求。</span>
+                </td>
+              </tr>
+              <tr>
+                <td>计算机网络（第7版）</td>
+                <td>2025-01-20</td>
+                <td>2025-02-19</td>
+                <td><span class="badge badge-ok">在借</span></td>
+                <td>1</td>
+                <td class="action-cell">
+                  <input type="checkbox" id="action-row-2" class="action-toggle">
+                  <label for="action-row-2" class="btn btn-secondary">续借（示例）</label>
+                  <label for="action-row-2" class="btn btn-primary">归还（示例）</label>
+                  <span class="action-tip">仅为示例操作，真实系统中会提交续借/归还请求。</span>
+                </td>
+              </tr>
+              <tr>
+                <td>算法导论</td>
+                <td>2025-01-25</td>
+                <td>2025-02-24</td>
+                <td><span class="badge badge-ok">在借</span></td>
+                <td>0</td>
+                <td class="action-cell">
+                  <input type="checkbox" id="action-row-3" class="action-toggle">
+                  <label for="action-row-3" class="btn btn-secondary">续借（示例）</label>
+                  <label for="action-row-3" class="btn btn-primary">归还（示例）</label>
+                  <span class="action-tip">仅为示例操作，真实系统中会提交续借/归还请求。</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3 class="card-title">历史记录</h3>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>图书</th>
+                <th>借出日期</th>
+                <th>归还日期</th>
+                <th>状态</th>
+                <th>续借次数</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>人类简史</td>
+                <td>2024-12-10</td>
+                <td>2025-01-05</td>
+                <td><span class="badge badge-done">已还</span></td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>设计心理学</td>
+                <td>2024-12-05</td>
+                <td>2025-01-02</td>
+                <td><span class="badge badge-done">已还</span></td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>时间机器</td>
+                <td>2024-11-20</td>
+                <td>2024-12-15</td>
+                <td><span class="badge badge-done">已还</span></td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>杀死一只知更鸟</td>
+                <td>2024-11-01</td>
+                <td>2024-12-01</td>
+                <td><span class="badge badge-done">已还</span></td>
+                <td>0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3 class="card-title">借阅规则与提示</h3>
+        <ul>
+          <li>标准借期 30 天，逾期需及时归还或线下联系客服。</li>
+          <li>续借需在到期前申请，每次顺延 30 天（示例数据，不含真实校验）。</li>
+          <li>本页数据为示例，实际应从登录后获取的读者账户加载。</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 图书管理系统。保留所有权利。</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

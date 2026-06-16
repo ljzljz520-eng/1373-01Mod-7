@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>注册 - 图书管理系统</title>
+  <link rel="stylesheet" href="css/style.css?v=20260301">
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="site-header">
+      <div class="container">
+        <div class="site-logo">
+          <img src="images/logo.svg" alt="Logo">
+          <h1 class="site-title"><a href="index.html">图书管理系统</a></h1>
+        </div>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="login.html">登录</a></li>
+            <li><a href="register.html" class="current">注册</a></li>
+            <li><a href="about.html">关于</a></li>
+            <li>
+              <span class="nav-drop-trigger">服务</span>
+              <div class="nav-drop">
+                <a href="list.html">图书列表</a>
+                <a href="borrow.html">借阅说明</a>
+                <a href="contact.html">联系</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <main class="main">
+      <section>
+        <h2 class="section-title">用户注册</h2>
+        <div class="card form-card">
+          <!-- 静态示例：使用 GET 跳转回首页，避免 POST 被静态服务器拦截 -->
+          <form method="get" action="index.html">
+            <div class="form-group">
+              <label for="reg-username">用户名</label>
+              <input type="text" id="reg-username" name="username" required minlength="2" maxlength="20" placeholder="2-20 个字符">
+            </div>
+            <div class="form-group">
+              <label for="reg-password">密码</label>
+              <input type="password" id="reg-password" name="password" required minlength="6" maxlength="32" placeholder="至少 6 位">
+            </div>
+            <div class="form-group">
+              <label for="reg-email">邮箱</label>
+              <input type="email" id="reg-email" name="email" required placeholder="example@mail.com">
+            </div>
+            <div class="form-group">
+              <label for="reg-phone">手机号码</label>
+              <input type="tel" id="reg-phone" name="phone" required pattern="[0-9]{11}" placeholder="11 位数字" maxlength="11">
+            </div>
+            <div class="form-group">
+              <label for="reg-idcard">身份证号</label>
+              <input type="text" id="reg-idcard" name="idcard" required pattern="[0-9]{17}[0-9Xx]" placeholder="18 位身份证号" maxlength="18">
+            </div>
+            <div class="form-group radio-group">
+              <span>性别</span>
+              <label><input type="radio" name="gender" value="male"> 男</label>
+              <label><input type="radio" name="gender" value="female"> 女</label>
+            </div>
+            <div class="form-group">
+              <label for="reg-role">身份类型</label>
+              <select id="reg-role" name="role">
+                <option value="reader">读者</option>
+                <option value="student">学生</option>
+                <option value="teacher">教师</option>
+              </select>
+            </div>
+            <div class="form-group checkbox-group">
+              <label>
+                <input type="checkbox" name="agree" required> 我已阅读并同意用户协议
+              </label>
+            </div>
+            <div class="form-group">
+              <label for="reg-remark">备注</label>
+              <textarea id="reg-remark" name="remark" placeholder="选填"></textarea>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">提交</button>
+              <button type="reset" class="btn btn-secondary">复位</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 图书管理系统。保留所有权利。</p>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>

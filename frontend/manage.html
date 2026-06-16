@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>后台管理 - 图书管理系统</title>
+  <link rel="stylesheet" href="css/style.css?v=20260301">
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="site-header">
+      <div class="container">
+        <div class="site-logo">
+          <img src="images/logo.svg" alt="Logo">
+          <h1 class="site-title"><a href="index.html">图书管理系统</a></h1>
+        </div>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="login.html">登录</a></li>
+            <li><a href="register.html">注册</a></li>
+            <li><a href="about.html">关于</a></li>
+            <li>
+              <span class="nav-drop-trigger">服务</span>
+              <div class="nav-drop">
+                <a href="list.html">图书列表</a>
+                <a href="borrow.html">借阅说明</a>
+                <a href="contact.html">联系</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <main class="main">
+      <h2 class="section-title">后台管理</h2>
+      <div class="dashboard">
+        <aside class="dashboard-nav">
+          <a href="list.html">图书管理</a>
+          <a href="borrow-manage.html">借阅管理</a>
+          <a href="readers.html">读者管理</a>
+          <a href="stats.html">统计概览</a>
+        </aside>
+        <div class="dashboard-content">
+          <p>欢迎使用后台管理。请从左侧选择功能模块。</p>
+          <div class="module-grid">
+            <a href="list.html" class="module-card">
+              <strong>图书管理</strong>
+              检索、上架、下架图书
+            </a>
+            <a href="borrow-manage.html" class="module-card">
+              <strong>借阅管理</strong>
+              借阅、归还、续借
+            </a>
+            <a href="readers.html" class="module-card">
+              <strong>读者管理</strong>
+              读者信息与权限
+            </a>
+            <a href="stats.html" class="module-card">
+              <strong>统计概览</strong>
+              借阅与馆藏统计
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 图书管理系统。保留所有权利。</p>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>

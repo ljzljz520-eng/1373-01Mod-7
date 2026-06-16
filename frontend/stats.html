@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>统计概览 - 图书管理系统</title>
+  <link rel="stylesheet" href="css/style.css?v=20260301">
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="site-header">
+      <div class="container">
+        <div class="site-logo">
+          <img src="images/logo.svg" alt="Logo">
+          <h1 class="site-title"><a href="index.html">图书管理系统</a></h1>
+        </div>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="login.html">登录</a></li>
+            <li><a href="register.html">注册</a></li>
+            <li><a href="about.html">关于</a></li>
+            <li>
+              <span class="nav-drop-trigger">服务</span>
+              <div class="nav-drop">
+                <a href="list.html">图书列表</a>
+                <a href="borrow.html">借阅说明</a>
+                <a href="contact.html">联系</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <h2 class="section-title">统计概览</h2>
+      <div class="dashboard">
+        <aside class="dashboard-nav">
+          <a href="list.html">图书管理</a>
+          <a href="borrow-manage.html">借阅管理</a>
+          <a href="readers.html">读者管理</a>
+          <a href="stats.html">统计概览</a>
+        </aside>
+        <div class="dashboard-content">
+          <p>以下为馆藏与借阅统计示例数据，数据截止至 2025 年 2 月。</p>
+
+          <h3 class="card-title">核心指标</h3>
+          <div class="stats-grid">
+            <div class="stats-card">
+              <span class="stats-value">18,256</span>
+              <span class="stats-label">馆藏总册数</span>
+            </div>
+            <div class="stats-card">
+              <span class="stats-value">1,024</span>
+              <span class="stats-label">注册读者数</span>
+            </div>
+            <div class="stats-card">
+              <span class="stats-value">326</span>
+              <span class="stats-label">本月借阅量</span>
+            </div>
+            <div class="stats-card">
+              <span class="stats-value">892</span>
+              <span class="stats-label">当前在借册数</span>
+            </div>
+          </div>
+
+          <h3 class="card-title">分类馆藏分布（示例）</h3>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>分类</th>
+                  <th>册数</th>
+                  <th>占比</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>文学类</td>
+                  <td>5,420</td>
+                  <td>29.7%</td>
+                </tr>
+                <tr>
+                  <td>科技类</td>
+                  <td>4,180</td>
+                  <td>22.9%</td>
+                </tr>
+                <tr>
+                  <td>经济管理</td>
+                  <td>2,650</td>
+                  <td>14.5%</td>
+                </tr>
+                <tr>
+                  <td>历史社科</td>
+                  <td>2,100</td>
+                  <td>11.5%</td>
+                </tr>
+                <tr>
+                  <td>教育心理</td>
+                  <td>1,806</td>
+                  <td>9.9%</td>
+                </tr>
+                <tr>
+                  <td>其他</td>
+                  <td>2,100</td>
+                  <td>11.5%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="card-title">近六月借阅趋势（示例）</h3>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>月份</th>
+                  <th>借阅次数</th>
+                  <th>归还次数</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2024-09</td>
+                  <td>298</td>
+                  <td>285</td>
+                </tr>
+                <tr>
+                  <td>2024-10</td>
+                  <td>312</td>
+                  <td>301</td>
+                </tr>
+                <tr>
+                  <td>2024-11</td>
+                  <td>335</td>
+                  <td>318</td>
+                </tr>
+                <tr>
+                  <td>2024-12</td>
+                  <td>308</td>
+                  <td>302</td>
+                </tr>
+                <tr>
+                  <td>2025-01</td>
+                  <td>341</td>
+                  <td>329</td>
+                </tr>
+                <tr>
+                  <td>2025-02</td>
+                  <td>326</td>
+                  <td>—</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 图书管理系统。保留所有权利。</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

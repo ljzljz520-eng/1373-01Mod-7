@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>图书列表 - 图书管理系统</title>
+  <link rel="stylesheet" href="css/style.css?v=20260301">
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="site-header">
+      <div class="container">
+        <div class="site-logo">
+          <img src="images/logo.svg" alt="Logo">
+          <h1 class="site-title"><a href="index.html">图书管理系统</a></h1>
+        </div>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="login.html">登录</a></li>
+            <li><a href="register.html">注册</a></li>
+            <li><a href="about.html">关于</a></li>
+            <li>
+              <span class="nav-drop-trigger">服务</span>
+              <div class="nav-drop">
+                <a href="list.html">图书列表</a>
+                <a href="borrow.html">借阅说明</a>
+                <a href="contact.html">联系</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+
+      </div>
+    </header>
+
+    <main class="main">
+      <section>
+        <h2 class="section-title">图书列表</h2>
+        <p>以下为更贴近真实馆藏结构的示例数据，包含封面、书名、作者、分类与简要内容简介，便于读者快速了解每本图书的主题与特色。</p>
+        <ul class="content-list">
+          <li>
+            <div class="card">
+              <strong>红楼梦</strong>（文学类）<br>
+              作者：曹雪芹<br>
+              <img src="images/book-hongloumeng.jpg" alt="红楼梦 封面">
+              <p>中国古典小说巅峰之作，通过贾宝玉与林黛玉等人的悲欢离合，折射封建家族由盛转衰的全过程，被誉为“封建社会的百科全书”。</p>
+              <div class="card-actions">
+                <a class="btn btn-primary" href="borrow-user.html#current">借阅（示例）</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <strong>活着</strong>（文学类）<br>
+              作者：余华<br>
+              <img src="images/book-huozhe.jpg" alt="活着 封面">
+              <p>以普通农民福贵一生的命运为主线，在时代巨变与家庭悲剧中展现人面对苦难仍选择活下去的坚韧与尊严，语言克制而有力量。</p>
+              <div class="card-actions">
+                <a class="btn btn-primary" href="borrow-user.html#current">借阅（示例）</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <strong>杀死一只知更鸟</strong>（文学类）<br>
+              作者：哈珀·李<br>
+              <img src="images/book-mockingbird.jpg" alt="杀死一只知更鸟 封面">
+              <p>以美国南方小镇为背景，通过一位律师为黑人辩护的案件，揭示种族偏见与正义勇气，被誉为二十世纪最重要的英语小说之一。</p>
+              <div class="card-actions">
+                <a class="btn btn-primary" href="borrow-user.html#current">借阅（示例）</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <strong>计算机网络（第7版）</strong>（科技类）<br>
+              作者：谢希仁<br>
+              <img src="images/book-network.jpg" alt="计算机网络 封面">
+              <p>国内经典网络教材，从概述、物理层、数据链路层到网络层、运输层、应用层系统讲解计算机网络基础知识，适合作为高校课程与自学参考。</p>
+              <div class="card-actions">
+                <a class="btn btn-primary" href="borrow-user.html#current">借阅（示例）</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <strong>算法导论</strong>（科技类）<br>
+              作者：Thomas H. Cormen 等<br>
+              <img src="images/book-algorithms.jpg" alt="算法导论 封面">
+              <p>国际知名算法教材，系统介绍排序、数据结构、图算法、动态规划等核心内容，注重算法正确性与复杂度分析，是计算机专业进阶必读书目之一。</p>
+              <div class="card-actions">
+                <a class="btn btn-primary" href="borrow-user.html#current">借阅（示例）</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <strong>时间机器</strong>（科幻类）<br>
+              作者：H. G. Wells<br>
+              <img src="images/book-time-machine.jpg" alt="时间机器 封面">
+              <p>科幻文学经典之作，讲述一位时间旅行者穿越到未来世界的冒险与思考，对阶级分化和人类命运进行了寓言式的想象。</p>
+              <div class="card-actions">
+                <a class="btn btn-primary" href="borrow-user.html#current">借阅（示例）</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <strong>教育心理学</strong>（教育类）<br>
+              作者：插入实际作者<br>
+              <img src="images/book-edu-psychology.jpg" alt="教育心理学 封面">
+              <p>从学习动机、认知发展到课堂管理，探讨心理学原理在教学中的应用，帮助教师理解学生行为并优化教学策略。</p>
+              <div class="card-actions">
+                <a class="btn btn-primary" href="borrow-user.html#current">借阅（示例）</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <strong>设计中的设计</strong>（艺术类）<br>
+              作者：原研哉<br>
+              <img src="images/book-design.jpg" alt="设计中的设计 封面">
+              <p>日本设计师原研哉代表作，通过实际案例讨论“空白”“信息与感知”等设计哲学，深入剖析日常物品背后的设计思考过程。</p>
+              <div class="card-actions">
+                <a class="btn btn-primary" href="borrow-user.html#current">借阅（示例）</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <strong>人类简史</strong>（人文类）<br>
+              作者：尤瓦尔·赫拉利<br>
+              <img src="images/book-sapiens.jpg" alt="人类简史 封面">
+              <p>以宏大视角梳理智人从认知革命到科技革命的演化历程，提出“虚构”“合作”等概念，帮助读者重新思考人类社会的形成与未来走向。</p>
+              <div class="card-actions">
+                <a class="btn btn-primary" href="borrow-user.html#current">借阅（示例）</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <nav class="pagination">
+          <span class="page-link disabled">上一页</span>
+          <span class="page-link current">1</span>
+          <a class="page-link" href="list-page2.html">2</a>
+          <a class="page-link" href="list-page2.html">下一页</a>
+        </nav>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 图书管理系统。保留所有权利。</p>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>

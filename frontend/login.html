@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登录 - 图书管理系统</title>
+  <link rel="stylesheet" href="css/style.css?v=20260301">
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="site-header">
+      <div class="container">
+        <div class="site-logo">
+          <img src="images/logo.svg" alt="Logo">
+          <h1 class="site-title"><a href="index.html">图书管理系统</a></h1>
+        </div>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="login.html" class="current">登录</a></li>
+            <li><a href="register.html">注册</a></li>
+            <li><a href="about.html">关于</a></li>
+            <li>
+              <span class="nav-drop-trigger">服务</span>
+              <div class="nav-drop">
+                <a href="list.html">图书列表</a>
+                <a href="borrow.html">借阅说明</a>
+                <a href="contact.html">联系</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <main class="main">
+      <section>
+        <h2 class="section-title">用户登录</h2>
+        <div class="card form-card">
+          <!-- 按题目要求：使用 POST 表单提交。
+               在本地 file:// 打开时浏览器不会真正向服务器发送请求，
+               只是作为页面跳转示例使用。 -->
+          <form method="post" action="borrow-user.html">
+            <div class="form-group">
+              <label for="login-user">用户名 / 邮箱</label>
+              <input type="text" id="login-user" name="username" required placeholder="请输入用户名或邮箱">
+            </div>
+            <div class="form-group">
+              <label for="login-pwd">密码</label>
+              <input type="password" id="login-pwd" name="password" required placeholder="请输入密码">
+            </div>
+            <div class="form-group checkbox-group">
+              <label>
+                <input type="checkbox" name="remember" value="1"> 记住我
+              </label>
+            </div>
+            <div class="form-group">
+              <label>登录目标（静态示例）</label>
+              <p style="margin: 0; color: var(--color-text-muted);">选择登录后示例跳转的页面：普通用户“我的借阅”或后台管理。</p>
+            </div>
+            <div class="form-actions" style="display: flex; gap: var(--space-sm); flex-wrap: wrap;">
+              <button type="submit" class="btn btn-primary" formaction="borrow-user.html">进入用户借阅页</button>
+              <button type="submit" class="btn btn-secondary" formaction="manage.html">进入后台管理</button>
+              <button type="reset" class="btn btn-secondary">复位</button>
+            </div>
+          </form>
+          <p style="margin-top: var(--space-md); color: var(--color-text-muted);">提示：当前为纯静态示例，表单使用 POST 方法，点击不同按钮会分别跳转到“我的借阅”（borrow-user.html）或“后台管理”（manage.html），不做真实身份校验或数据处理。</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 图书管理系统。保留所有权利。</p>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>

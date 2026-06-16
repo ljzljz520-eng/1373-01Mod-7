@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>借阅说明 - 图书管理系统</title>
+  <link rel="stylesheet" href="css/style.css?v=20260301">
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="site-header">
+      <div class="container">
+        <div class="site-logo">
+          <img src="images/logo.svg" alt="Logo">
+          <h1 class="site-title"><a href="index.html">图书管理系统</a></h1>
+        </div>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="login.html">登录</a></li>
+            <li><a href="register.html">注册</a></li>
+            <li><a href="about.html">关于</a></li>
+            <li>
+              <span class="nav-drop-trigger">服务</span>
+              <div class="nav-drop">
+                <a href="list.html">图书列表</a>
+                <a href="borrow.html">借阅说明</a>
+                <a href="contact.html">联系</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+
+      </div>
+    </header>
+
+    <main class="main">
+      <section>
+        <h2 class="section-title">借阅说明</h2>
+        <div class="card" id="actions-tip">
+          <h3 class="card-title">借阅流程（示例操作提示）</h3>
+          <ol>
+            <li>注册账号并登录系统</li>
+            <li>在图书列表或检索页找到目标图书</li>
+            <li>点击「借阅」并确认借阅期限</li>
+            <li>按时归还或在线续借</li>
+          </ol>
+        <p style="color: var(--color-text-muted); margin-top: var(--space-sm);">当前站点为纯静态示例：列表中的“借阅（示例）”按钮，以及“我的借阅”页中的“续借（示例）”“归还（示例）”按钮，仅用于演示流程，不会真实修改数据。</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">借阅规则</h3>
+          <ul>
+            <li>每人同时借阅册数上限以系统规定为准</li>
+            <li>借期通常为 30 天，可在到期前申请续借</li>
+            <li>逾期未还将产生相应处理，请按时归还</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 图书管理系统。保留所有权利。</p>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>

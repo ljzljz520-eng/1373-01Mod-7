@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>读者管理 - 图书管理系统</title>
+  <link rel="stylesheet" href="css/style.css?v=20260301">
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="site-header">
+      <div class="container">
+        <div class="site-logo">
+          <img src="images/logo.svg" alt="Logo">
+          <h1 class="site-title"><a href="index.html">图书管理系统</a></h1>
+        </div>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="login.html">登录</a></li>
+            <li><a href="register.html">注册</a></li>
+            <li><a href="about.html">关于</a></li>
+            <li>
+              <span class="nav-drop-trigger">服务</span>
+              <div class="nav-drop">
+                <a href="list.html">图书列表</a>
+                <a href="borrow.html">借阅说明</a>
+                <a href="contact.html">联系</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <h2 class="section-title">读者管理</h2>
+      <div class="dashboard">
+        <aside class="dashboard-nav">
+          <a href="list.html">图书管理</a>
+          <a href="borrow-manage.html">借阅管理</a>
+          <a href="readers.html">读者管理</a>
+          <a href="stats.html">统计概览</a>
+        </aside>
+        <div class="dashboard-content">
+          <p>以下为读者信息示例数据，便于管理员查看读者证号、联系方式与状态。</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>读者证号</th>
+                  <th>姓名</th>
+                  <th>手机</th>
+                  <th>邮箱</th>
+                  <th>状态</th>
+                  <th>注册日期</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>R2024001</td>
+                  <td>张明</td>
+                  <td>138****8001</td>
+                  <td>zhangming@example.com</td>
+                  <td><span class="badge badge-ok">正常</span></td>
+                  <td>2024-01-15</td>
+                </tr>
+                <tr>
+                  <td>R2024002</td>
+                  <td>李华</td>
+                  <td>139****8002</td>
+                  <td>lihua@example.com</td>
+                  <td><span class="badge badge-ok">正常</span></td>
+                  <td>2024-02-20</td>
+                </tr>
+                <tr>
+                  <td>R2024003</td>
+                  <td>王芳</td>
+                  <td>137****8003</td>
+                  <td>wangfang@example.com</td>
+                  <td><span class="badge badge-warn">在借 2 册</span></td>
+                  <td>2024-03-08</td>
+                </tr>
+                <tr>
+                  <td>R2024004</td>
+                  <td>刘强</td>
+                  <td>136****8004</td>
+                  <td>liuqiang@example.com</td>
+                  <td><span class="badge badge-ok">正常</span></td>
+                  <td>2024-04-12</td>
+                </tr>
+                <tr>
+                  <td>R2024005</td>
+                  <td>陈静</td>
+                  <td>135****8005</td>
+                  <td>chenjing@example.com</td>
+                  <td><span class="badge badge-warn">在借 1 册</span></td>
+                  <td>2024-05-01</td>
+                </tr>
+                <tr>
+                  <td>R2024006</td>
+                  <td>赵磊</td>
+                  <td>134****8006</td>
+                  <td>zhaolei@example.com</td>
+                  <td><span class="badge badge-ok">正常</span></td>
+                  <td>2024-06-18</td>
+                </tr>
+                <tr>
+                  <td>R2024007</td>
+                  <td>孙丽</td>
+                  <td>133****8007</td>
+                  <td>sunli@example.com</td>
+                  <td><span class="badge badge-ok">正常</span></td>
+                  <td>2024-07-22</td>
+                </tr>
+                <tr>
+                  <td>R2024008</td>
+                  <td>周杰</td>
+                  <td>132****8008</td>
+                  <td>zhoujie@example.com</td>
+                  <td><span class="badge badge-warn">在借 3 册</span></td>
+                  <td>2024-08-05</td>
+                </tr>
+                <tr>
+                  <td>R2024009</td>
+                  <td>吴敏</td>
+                  <td>131****8009</td>
+                  <td>wumin@example.com</td>
+                  <td><span class="badge badge-ok">正常</span></td>
+                  <td>2024-09-10</td>
+                </tr>
+                <tr>
+                  <td>R2024010</td>
+                  <td>郑涛</td>
+                  <td>130****8010</td>
+                  <td>zhengtao@example.com</td>
+                  <td><span class="badge badge-disable">冻结</span></td>
+                  <td>2024-10-03</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 图书管理系统。保留所有权利。</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

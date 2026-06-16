@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>借阅管理 - 图书管理系统</title>
+  <link rel="stylesheet" href="css/style.css?v=20260301">
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="site-header">
+      <div class="container">
+        <div class="site-logo">
+          <img src="images/logo.svg" alt="Logo">
+          <h1 class="site-title"><a href="index.html">图书管理系统</a></h1>
+        </div>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="login.html">登录</a></li>
+            <li><a href="register.html">注册</a></li>
+            <li><a href="about.html">关于</a></li>
+            <li>
+              <span class="nav-drop-trigger">服务</span>
+              <div class="nav-drop">
+                <a href="list.html">图书列表</a>
+                <a href="borrow.html">借阅说明</a>
+                <a href="contact.html">联系</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <h2 class="section-title">借阅管理</h2>
+      <div class="dashboard">
+        <aside class="dashboard-nav">
+          <a href="list.html">图书管理</a>
+          <a href="borrow-manage.html">借阅管理</a>
+          <a href="readers.html">读者管理</a>
+          <a href="stats.html">统计概览</a>
+        </aside>
+        <div class="dashboard-content">
+          <p>以下为借阅、归还与续借记录示例数据，便于管理员处理在借、已还及逾期记录。</p>
+
+          <h3 class="card-title">借阅概览</h3>
+          <div class="stats-grid">
+            <div class="stats-card">
+              <span class="stats-value">28</span>
+              <span class="stats-label">当前在借</span>
+            </div>
+            <div class="stats-card">
+              <span class="stats-value">12</span>
+              <span class="stats-label">本月待还</span>
+            </div>
+            <div class="stats-card">
+              <span class="stats-value">3</span>
+              <span class="stats-label">逾期未还</span>
+            </div>
+          </div>
+
+          <h3 class="card-title">借阅记录</h3>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>流水号</th>
+                  <th>读者</th>
+                  <th>图书</th>
+                  <th>借出日期</th>
+                  <th>应还日期</th>
+                  <th>状态</th>
+                  <th>续借</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>B202502001</td>
+                  <td>张明 (R2024001)</td>
+                  <td>活着</td>
+                  <td>2025-01-10</td>
+                  <td>2025-02-09</td>
+                  <td><span class="badge badge-ok">在借</span></td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>B202502002</td>
+                  <td>王芳 (R2024003)</td>
+                  <td>红楼梦</td>
+                  <td>2025-01-15</td>
+                  <td>2025-02-14</td>
+                  <td><span class="badge badge-ok">在借</span></td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>B202502003</td>
+                  <td>王芳 (R2024003)</td>
+                  <td>杀死一只知更鸟</td>
+                  <td>2025-01-20</td>
+                  <td>2025-02-19</td>
+                  <td><span class="badge badge-ok">在借</span></td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>B202502004</td>
+                  <td>陈静 (R2024005)</td>
+                  <td>人类简史</td>
+                  <td>2025-01-22</td>
+                  <td>2025-02-21</td>
+                  <td><span class="badge badge-ok">在借</span></td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>B202502005</td>
+                  <td>周杰 (R2024008)</td>
+                  <td>计算机网络（第7版）</td>
+                  <td>2025-01-05</td>
+                  <td>2025-02-04</td>
+                  <td><span class="badge badge-overdue">逾期</span></td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>B202502006</td>
+                  <td>周杰 (R2024008)</td>
+                  <td>算法导论</td>
+                  <td>2025-01-08</td>
+                  <td>2025-02-07</td>
+                  <td><span class="badge badge-overdue">逾期</span></td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>B202502007</td>
+                  <td>周杰 (R2024008)</td>
+                  <td>时间机器</td>
+                  <td>2025-01-12</td>
+                  <td>2025-02-11</td>
+                  <td><span class="badge badge-ok">在借</span></td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>B202501101</td>
+                  <td>李华 (R2024002)</td>
+                  <td>活着</td>
+                  <td>2024-12-10</td>
+                  <td>2025-01-09</td>
+                  <td><span class="badge badge-done">已还</span></td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>B202501102</td>
+                  <td>刘强 (R2024004)</td>
+                  <td>设计心理学</td>
+                  <td>2024-12-15</td>
+                  <td>2025-01-14</td>
+                  <td><span class="badge badge-done">已还</span></td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>B202501103</td>
+                  <td>赵磊 (R2024006)</td>
+                  <td>教育心理学</td>
+                  <td>2024-12-20</td>
+                  <td>2025-01-19</td>
+                  <td><span class="badge badge-done">已还</span></td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>B202501104</td>
+                  <td>吴敏 (R2024009)</td>
+                  <td>人类简史</td>
+                  <td>2024-12-22</td>
+                  <td>2025-01-21</td>
+                  <td><span class="badge badge-overdue">逾期还</span></td>
+                  <td>0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="card" style="margin-top: var(--space-xl);">
+            <h3 class="card-title">操作说明</h3>
+            <ul>
+              <li><strong>借阅：</strong>在图书列表或检索结果中为读者办理借阅，系统生成流水号并记录应还日期（默认 30 天）。</li>
+              <li><strong>归还：</strong>根据流水号或读者证号办理归还，状态更新为「已还」。</li>
+              <li><strong>续借：</strong>到期前可为在借记录办理续借，应还日期顺延 30 天，续借次数 +1（具体续借上限以规则为准）。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 图书管理系统。保留所有权利。</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

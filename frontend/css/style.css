@@ -731,6 +731,449 @@ p {
   color: var(--color-primary);
 }
 
+/* ---------- 11.3 Rare Book Page ---------- */
+.rb-hero {
+  text-align: center;
+  padding: var(--space-xl) 0;
+}
+
+.rb-hero h1 {
+  font-size: 1.75rem;
+  color: var(--color-primary);
+  margin: 0 0 var(--space-md);
+}
+
+.rb-hero p {
+  max-width: 680px;
+  margin: 0 auto;
+  color: var(--color-text-muted);
+  font-size: 1.0625rem;
+}
+
+.rb-alert-bar {
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+.rb-alert-bar--bottom {
+  margin-top: var(--space-xl);
+  margin-bottom: 0;
+}
+
+.rb-alert {
+  flex: 1;
+  min-width: 260px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  border-radius: var(--radius-lg);
+  border: 2px solid #e53935;
+  background: #fff5f5;
+  color: #b71c1c;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.rb-alert strong {
+  font-size: 1rem;
+}
+
+.rb-alert-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.rb-category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-lg);
+}
+
+.rb-category-card {
+  margin-bottom: 0;
+}
+
+.rb-sub-list {
+  margin-top: var(--space-sm);
+  margin-bottom: 0;
+  padding-left: 1.2em;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.rb-sub-list li {
+  margin-bottom: var(--space-xs);
+}
+
+.rb-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+}
+
+.rb-flow-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.rb-flow-node {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-sm) var(--space-lg);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 600;
+  z-index: 2;
+  box-shadow: 0 4px 14px rgba(31, 111, 235, 0.25);
+}
+
+.rb-flow-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  font-size: 0.875rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.rb-flow-label {
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.rb-flow-detail {
+  width: 100%;
+  max-width: 640px;
+  margin-top: var(--space-sm);
+  text-align: center;
+}
+
+.rb-flow-detail p {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+}
+
+.rb-flow-arrow {
+  width: 2px;
+  height: 28px;
+  background: linear-gradient(180deg, var(--color-primary), var(--color-accent));
+  margin: var(--space-xs) 0;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.rb-flow-arrow::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 7px solid var(--color-accent);
+}
+
+.rb-material-table {
+  margin: 0;
+}
+
+.rb-timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-lg);
+}
+
+.rb-timeline-card {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.rb-timeline-days {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: var(--space-sm) 0;
+}
+
+.rb-rules-card {
+  padding: var(--space-xl);
+}
+
+.rb-rules-list {
+  counter-reset: rule-counter;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rb-rules-list li {
+  counter-increment: rule-counter;
+  padding: var(--space-md) var(--space-md) var(--space-md) 3.2em;
+  position: relative;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.9375rem;
+  line-height: 1.7;
+}
+
+.rb-rules-list li:last-child {
+  border-bottom: none;
+}
+
+.rb-rules-list li::before {
+  content: counter(rule-counter);
+  position: absolute;
+  left: 0;
+  top: var(--space-md);
+  width: 2em;
+  height: 2em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  color: #fff;
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+/* ---------- Rare Book - Warning Banner ---------- */
+.rb-warning-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.rb-warning-banner--bottom {
+  margin-top: var(--space-xl);
+  margin-bottom: 0;
+}
+
+.rb-warning-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-lg);
+  padding: var(--space-lg) var(--space-xl);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, #fff5f5 0%, #ffeaea 100%);
+  border: 2px solid #e53935;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.rb-warning-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #e53935, #ff6f60, #e53935);
+}
+
+.rb-warning-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(229, 57, 53, 0.2);
+}
+
+.rb-warning-icon {
+  flex-shrink: 0;
+  color: #e53935;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: rgba(229, 57, 53, 0.1);
+  border-radius: 50%;
+}
+
+.rb-warning-text h3 {
+  margin: 0 0 var(--space-xs);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #b71c1c;
+}
+
+.rb-warning-text p {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: #c62828;
+  line-height: 1.6;
+}
+
+.rb-warning-item--photo .rb-warning-icon {
+  animation: rb-pulse 2s ease-in-out infinite;
+}
+
+@keyframes rb-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(229, 57, 53, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(229, 57, 53, 0);
+  }
+}
+
+/* ---------- Rare Book - Category Icons ---------- */
+.rb-category-icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(31, 111, 235, 0.1), rgba(138, 92, 246, 0.1));
+  border-radius: var(--radius);
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+}
+
+/* ---------- Rare Book - Flow Chart ---------- */
+.rb-flow-chart {
+  position: relative;
+  padding: var(--space-lg) 0;
+}
+
+.rb-flow-step {
+  position: relative;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: var(--space-lg);
+  align-items: stretch;
+  margin-bottom: 0;
+}
+
+.rb-flow-step:not(:last-child) {
+  padding-bottom: var(--space-xl);
+}
+
+.rb-flow-step-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  position: relative;
+  z-index: 2;
+}
+
+.rb-flow-step-num {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 50%;
+  box-shadow: 0 4px 14px rgba(31, 111, 235, 0.25);
+  position: relative;
+  z-index: 2;
+}
+
+.rb-flow-step-title {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.rb-flow-step-body {
+  background: linear-gradient(145deg, #ffffff, #f7f9ff);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: 0 4px 16px rgba(23, 62, 122, 0.06);
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.rb-flow-step-body::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid var(--color-border-strong);
+}
+
+.rb-flow-step-body::after {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-right: 9px solid #ffffff;
+}
+
+.rb-flow-step-body:hover {
+  transform: translateX(4px);
+  box-shadow: 0 8px 24px rgba(23, 62, 122, 0.1);
+}
+
+.rb-flow-step-body p {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+.rb-flow-step-body strong {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.rb-flow-connector {
+  position: absolute;
+  left: 100px;
+  top: 100%;
+  width: 3px;
+  height: calc(100% - 56px);
+  background: linear-gradient(180deg, var(--color-primary), var(--color-accent));
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.rb-flow-connector::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  background: var(--color-accent);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px var(--color-bg);
+}
+
 /* ---------- 12. Responsive ---------- */
 @media (max-width: 768px) {
   .site-header .container {
@@ -784,6 +1227,42 @@ p {
   .form-group textarea {
     max-width: 100%;
   }
+
+  .rb-alert-bar {
+    flex-direction: column;
+  }
+
+  .rb-warning-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .rb-flow-step {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+  }
+
+  .rb-flow-step-body::before,
+  .rb-flow-step-body::after {
+    display: none;
+  }
+
+  .rb-flow-connector {
+    left: 50%;
+    top: 100%;
+    height: calc(100% - 56px - var(--space-sm));
+  }
+
+  .rb-flow-step:not(:last-child) {
+    padding-bottom: var(--space-lg);
+  }
+
+  .rb-flow-step-body:hover {
+    transform: translateY(-2px);
+  }
+
+  .rb-flow-detail {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -807,5 +1286,13 @@ p {
   .data-table td {
     padding: var(--space-xs) var(--space-sm);
     font-size: 0.8125rem;
+  }
+
+  .rb-category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rb-timeline-grid {
+    grid-template-columns: 1fr;
   }
 }
